@@ -6,136 +6,257 @@
   <title>Gokul S – Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="navbar" id="navbar">
-    <div class="nav-logo">GS</div>
-    <ul class="nav-links">
+    <div class="nav-logo">G<span>.S</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <a href="#contact" class="btn btn-nav">Hire Me</a>
     <button class="hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="about">
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hello, I'm</p>
-        <h1 class="hero-name">Gokul S</h1>
-        <h2 class="hero-title">Full Stack Developer</h2>
-        <p class="hero-bio">
-          Computer Science &amp; Engineering graduate passionate about building scalable,
-          efficient web applications. Experienced in front-end, back-end, databases, APIs,
-          and modern frameworks — always eager to explore emerging technologies.
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text fade-up">
+        <p class="hero-tag">👋 Hello, I'm</p>
+        <h1>Gokul S</h1>
+        <h2 class="hero-role">
+          <span class="typed" id="typed"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Computer Science &amp; Engineering graduate passionate about building
+          scalable, efficient web applications and exploring emerging technologies.
         </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
         </div>
-        <div class="hero-socials">
-          <a href="mailto:gokulsat73@gmail.com" aria-label="Email">
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">1+</span>
+            <span class="stat-label">Internship</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image fade-up delay-2">
+        <div class="img-blob">
+          <img src="photo.jpg" alt="Gokul S" />
+        </div>
+        <div class="social-float">
+          <a href="mailto:gokulsat73@gmail.com" title="Email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+          <a href="https://github.com/gokul2006-gs" target="_blank" rel="noopener" title="GitHub">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </a>
         </div>
       </div>
-      <div class="hero-image">
-        <div class="image-ring">
-          <img src="photo.jpg" alt="Gokul S" />
+    </div>
+    <div class="scroll-down">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img fade-up">
+          <div class="about-img-wrap">
+            <img src="photo.jpg" alt="Gokul S" />
+            <div class="about-badge">
+              <span>B.E CSE</span>
+              <small>2026 Graduate</small>
+            </div>
+          </div>
+        </div>
+        <div class="about-content fade-up delay-1">
+          <p class="section-tag">About Me</p>
+          <h2 class="section-title">Who I Am</h2>
+          <p class="about-text">
+            I'm a Full Stack Developer with a B.E in Computer Science &amp; Engineering
+            from K.S.R. Institute for Engineering and Technology, Tiruchengode (CGPA: 7.01).
+          </p>
+          <p class="about-text">
+            I love turning ideas into real products — from designing clean UIs to building
+            robust backends. My experience spans MERN stack development, machine learning,
+            IoT integration, and data analytics.
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">Name</span>
+              <span class="info-val">Gokul S</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Email</span>
+              <span class="info-val">gokulsat73@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Phone</span>
+              <span class="info-val">+91 6383481856</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">Degree</span>
+              <span class="info-val">B.E Computer Science</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Download CV</a>
         </div>
       </div>
-    </div>
-    <div class="scroll-indicator">
-      <span></span>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section class="section" id="skills">
+  <section class="section bg-light" id="skills">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <p class="section-sub">Technologies I work with</p>
-      <div class="skills-grid">
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">☕</div>
-          <span>Java</span>
+      <p class="section-tag center fade-up">What I Know</p>
+      <h2 class="section-title center fade-up">My Skills</h2>
+      <div class="skills-wrap">
+        <div class="skill-group fade-up">
+          <h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>React.js</span><span>80%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>HTML / CSS</span><span>90%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>JavaScript</span><span>75%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+            </div>
+          </div>
         </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🗄️</div>
-          <span>Data Structures</span>
+        <div class="skill-group fade-up delay-1">
+          <h3>Backend &amp; Database</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Node.js / Express</span><span>75%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>MongoDB</span><span>70%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>SQL / MySQL</span><span>80%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:80%"></div></div>
+            </div>
+          </div>
         </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🛢️</div>
-          <span>SQL / MySQL</span>
+        <div class="skill-group fade-up delay-2">
+          <h3>Other</h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Python / ML</span><span>75%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Java / DSA</span><span>70%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Power BI / Excel</span><span>65%</span></div>
+              <div class="bar"><div class="bar-fill" style="--w:65%"></div></div>
+            </div>
+          </div>
         </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">⚛️</div>
-          <span>React.js</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🟢</div>
-          <span>Node.js</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🍃</div>
-          <span>MongoDB</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🐍</div>
-          <span>Python</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🤖</div>
-          <span>Machine Learning</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">🌐</div>
-          <span>Web Development</span>
-        </div>
-        <div class="skill-card" data-aos>
-          <div class="skill-icon">📊</div>
-          <span>Power BI / Excel</span>
-        </div>
+      </div>
+
+      <!-- Tech icons row -->
+      <div class="tech-icons fade-up">
+        <div class="tech-icon"><div class="ti">☕</div><span>Java</span></div>
+        <div class="tech-icon"><div class="ti">⚛️</div><span>React</span></div>
+        <div class="tech-icon"><div class="ti">🟢</div><span>Node.js</span></div>
+        <div class="tech-icon"><div class="ti">🍃</div><span>MongoDB</span></div>
+        <div class="tech-icon"><div class="ti">🐍</div><span>Python</span></div>
+        <div class="tech-icon"><div class="ti">🛢️</div><span>MySQL</span></div>
+        <div class="tech-icon"><div class="ti">🤖</div><span>ML</span></div>
+        <div class="tech-icon"><div class="ti">📊</div><span>Power BI</span></div>
       </div>
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section section-dark" id="experience">
+  <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-sub">Where I've worked</p>
-      <div class="timeline">
-        <div class="timeline-item" data-aos>
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="timeline-header">
-              <h3>Machine Learning Intern</h3>
-              <span class="timeline-date">June 2024 – July 2024</span>
+      <p class="section-tag center fade-up">My Journey</p>
+      <h2 class="section-title center fade-up">Experience &amp; Education</h2>
+      <div class="timeline-grid">
+        <div class="tl-col fade-up">
+          <h3 class="tl-heading"><span>💼</span> Experience</h3>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">June 2024 – July 2024</span>
+              <h4>Machine Learning Intern</h4>
+              <p class="tl-org">Python &amp; ML Internship</p>
+              <ul>
+                <li>Built predictive models using NumPy, Pandas, Matplotlib</li>
+                <li>Implemented K-Means &amp; KNN for clustering and pattern recognition</li>
+                <li>Applied supervised learning — classification &amp; regression</li>
+                <li>Improved accuracy via data cleaning &amp; feature selection</li>
+              </ul>
             </div>
-            <p class="timeline-company">Python &amp; ML Internship</p>
-            <ul>
-              <li>Developed Python skills using NumPy, Pandas, and Matplotlib for data preprocessing, analysis, and visualization.</li>
-              <li>Gained hands-on experience in supervised learning — classification and regression for predictive models.</li>
-              <li>Implemented K-Means and KNN algorithms for clustering, pattern recognition, and similarity-based predictions.</li>
-              <li>Improved model performance through data cleaning, feature selection, and basic optimization techniques.</li>
-            </ul>
+          </div>
+        </div>
+        <div class="tl-col fade-up delay-1">
+          <h3 class="tl-heading"><span>🎓</span> Education</h3>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">2022 – 2026</span>
+              <h4>B.E Computer Science &amp; Engineering</h4>
+              <p class="tl-org">K.S.R. Institute for Engineering and Technology, Tiruchengode</p>
+              <p class="tl-grade">CGPA: 7.01 / 10</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">2022</span>
+              <h4>12th Standard (HSC)</h4>
+              <p class="tl-org">Tagore Matric Higher Secondary School</p>
+              <p class="tl-grade">73.5%</p>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <span class="tl-date">2020</span>
+              <h4>10th Standard (SSLC)</h4>
+              <p class="tl-org">Tagore Matric Higher Secondary School</p>
+              <p class="tl-grade">88%</p>
+            </div>
           </div>
         </div>
       </div>
@@ -143,156 +264,266 @@
   </section>
 
   <!-- PROJECTS -->
-  <section class="section" id="projects">
+  <section class="section bg-light" id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-sub">Things I've built</p>
+      <p class="section-tag center fade-up">My Work</p>
+      <h2 class="section-title center fade-up">GitHub Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card" data-aos>
-          <div class="project-top">
-            <div class="project-icon">🚛</div>
-            <div class="project-links">
-              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <div class="proj-card fade-up">
+          <div class="proj-img">
+            <div class="proj-placeholder">🚛</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/FLEET_MANAGEMENT_SYSTEM" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
             </div>
           </div>
-          <h3>Fleet IQ – Intelligent Fleet Management</h3>
-          <p>Full-stack fleet management system with real-time vehicle tracking, performance analytics, fuel efficiency monitoring, and automated maintenance alerts.</p>
-          <div class="project-tags">
-            <span>MongoDB</span><span>Express.js</span><span>React.js</span><span>Node.js</span>
-          </div>
-          <div class="project-date">June 2025 – July 2025</div>
-        </div>
-
-        <div class="project-card" data-aos>
-          <div class="project-top">
-            <div class="project-icon">🚗</div>
-            <div class="project-links">
-              <a href="#" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+          <div class="proj-body">
+            <div class="proj-tags"><span>JavaScript</span><span>MERN</span><span>Fleet</span></div>
+            <h3>Fleet Management System</h3>
+            <p>Full-stack fleet management system with real-time vehicle tracking, performance analytics, and automated maintenance alerts.</p>
+            <div class="proj-footer">
+              <span class="proj-date">JavaScript</span>
+              <a href="https://github.com/gokul2006-gs/FLEET_MANAGEMENT_SYSTEM" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
             </div>
           </div>
-          <h3>Smart Vehicle System – IoT Integration</h3>
-          <p>Intelligent vehicle safety system with sensors detecting alcohol consumption, accidents, and driver health in real time, plus emergency notification and live tracking.</p>
-          <div class="project-tags">
-            <span>IoT</span><span>Sensors</span><span>Web</span><span>Real-time</span>
-          </div>
-          <div class="project-date">November 2025 – April 2026</div>
         </div>
 
+        <div class="proj-card fade-up delay-1">
+          <div class="proj-img">
+            <div class="proj-placeholder">🚗</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/mern-fleet-app" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>MongoDB</span><span>Express</span><span>React</span><span>Node</span></div>
+            <h3>MERN Fleet App</h3>
+            <p>MERN stack fleet application with live demo on Vercel. Manages vehicle data, routes, and operational metrics in real time.</p>
+            <div class="proj-footer">
+              <span class="proj-date">JavaScript</span>
+              <a href="https://github.com/gokul2006-gs/mern-fleet-app" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up">
+          <div class="proj-img">
+            <div class="proj-placeholder">🏫</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/Campus-Resource-Management" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>TypeScript</span><span>Campus</span><span>Web</span></div>
+            <h3>Campus Resource Management</h3>
+            <p>Web platform for managing campus resources, bookings, and scheduling. Live on Vercel with a clean TypeScript codebase.</p>
+            <div class="proj-footer">
+              <span class="proj-date">TypeScript</span>
+              <a href="https://github.com/gokul2006-gs/Campus-Resource-Management" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up delay-1">
+          <div class="proj-img">
+            <div class="proj-placeholder">📝</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/Exam_Management" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>JavaScript</span><span>Exam</span><span>Web App</span></div>
+            <h3>Exam Management System</h3>
+            <p>Full-featured exam management system for scheduling, conducting, and tracking exams. Deployed live on Vercel.</p>
+            <div class="proj-footer">
+              <span class="proj-date">JavaScript</span>
+              <a href="https://github.com/gokul2006-gs/Exam_Management" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up">
+          <div class="proj-img">
+            <div class="proj-placeholder">🏦</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/Bank_Loan_System" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>JavaScript</span><span>Banking</span><span>Finance</span></div>
+            <h3>Bank Loan System</h3>
+            <p>Banking loan management system for processing loan applications, tracking repayments, and managing customer records.</p>
+            <div class="proj-footer">
+              <span class="proj-date">JavaScript</span>
+              <a href="https://github.com/gokul2006-gs/Bank_Loan_System" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up delay-1">
+          <div class="proj-img">
+            <div class="proj-placeholder">🌿</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/Farm-Direct" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>TypeScript</span><span>Agriculture</span><span>E-commerce</span></div>
+            <h3>Farm Direct</h3>
+            <p>Direct farm-to-consumer platform connecting farmers with buyers, enabling fresh produce sales without middlemen.</p>
+            <div class="proj-footer">
+              <span class="proj-date">TypeScript</span>
+              <a href="https://github.com/gokul2006-gs/Farm-Direct" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up">
+          <div class="proj-img">
+            <div class="proj-placeholder">🌱</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/Organic" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>HTML</span><span>CSS</span><span>Organic</span></div>
+            <h3>Organic</h3>
+            <p>Clean, responsive organic products website built with HTML and CSS. Showcases natural products with a modern layout.</p>
+            <div class="proj-footer">
+              <span class="proj-date">HTML / CSS ⭐ 1</span>
+              <a href="https://github.com/gokul2006-gs/Organic" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card fade-up delay-1">
+          <div class="proj-img">
+            <div class="proj-placeholder">🐕</div>
+            <div class="proj-overlay">
+              <a href="https://github.com/gokul2006-gs/DOGSLIFE" target="_blank" rel="noopener" class="proj-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags"><span>CSS</span><span>HTML</span><span>Design</span></div>
+            <h3>DOGSLIFE</h3>
+            <p>A beautifully styled dog lifestyle website built with CSS, featuring responsive design and engaging visual layouts.</p>
+            <div class="proj-footer">
+              <span class="proj-date">CSS</span>
+              <a href="https://github.com/gokul2006-gs/DOGSLIFE" target="_blank" rel="noopener" class="proj-arrow" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="view-all-wrap fade-up">
+        <a href="https://github.com/gokul2006-gs" target="_blank" rel="noopener" class="btn btn-ghost">View All on GitHub →</a>
       </div>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section class="section section-dark" id="certifications">
+  <section class="section" id="certifications">
     <div class="container">
-      <h2 class="section-title">Awards &amp; Certifications</h2>
-      <p class="section-sub">Recognition &amp; training</p>
-      <div class="cert-grid">
-        <div class="cert-card" data-aos>
+      <p class="section-tag center fade-up">Recognition</p>
+      <h2 class="section-title center fade-up">Awards &amp; Certifications</h2>
+      <div class="cert-row">
+        <div class="cert-card fade-up">
+          <div class="cert-num">01</div>
           <div class="cert-icon">📊</div>
           <h3>Data Analyst Certification</h3>
-          <p>Trained in data cleaning, EDA, SQL queries, and data visualization using Excel and Power BI.</p>
+          <p>Data cleaning, EDA, SQL queries, and visualization using Excel and Power BI.</p>
         </div>
-        <div class="cert-card" data-aos>
+        <div class="cert-card fade-up delay-1">
+          <div class="cert-num">02</div>
           <div class="cert-icon">🤖</div>
           <h3>AI Technology – Paper Presentation</h3>
-          <p>Presented AI concepts, applications, and emerging trends at a technical paper presentation event.</p>
+          <p>Presented AI concepts, applications, and emerging trends at a technical event.</p>
         </div>
-        <div class="cert-card" data-aos>
+        <div class="cert-card fade-up delay-2">
+          <div class="cert-num">03</div>
           <div class="cert-icon">💻</div>
           <h3>Frontend Development Training</h3>
-          <p>Trained in frontend development at Nurture Info Tech, covering modern web development practices.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <p class="section-sub">Academic background</p>
-      <div class="edu-list">
-        <div class="edu-card" data-aos>
-          <div class="edu-left">
-            <div class="edu-dot"></div>
-            <div>
-              <h3>B.E Computer Science &amp; Engineering</h3>
-              <p>K.S.R. Institute for Engineering and Technology, Tiruchengode</p>
-            </div>
-          </div>
-          <div class="edu-right">
-            <span class="edu-year">2026</span>
-            <span class="edu-grade">CGPA: 7.01 / 10</span>
-          </div>
-        </div>
-        <div class="edu-card" data-aos>
-          <div class="edu-left">
-            <div class="edu-dot"></div>
-            <div>
-              <h3>12th Standard (HSC)</h3>
-              <p>Tagore Matric Higher Secondary School</p>
-            </div>
-          </div>
-          <div class="edu-right">
-            <span class="edu-year">2022</span>
-            <span class="edu-grade">73.5%</span>
-          </div>
-        </div>
-        <div class="edu-card" data-aos>
-          <div class="edu-left">
-            <div class="edu-dot"></div>
-            <div>
-              <h3>10th Standard (SSLC)</h3>
-              <p>Tagore Matric Higher Secondary School</p>
-            </div>
-          </div>
-          <div class="edu-right">
-            <span class="edu-year">2020</span>
-            <span class="edu-grade">88%</span>
-          </div>
+          <p>Trained in modern frontend development at Nurture Info Tech.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section section-dark" id="contact">
+  <section class="section bg-light" id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-sub">Let's work together</p>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-            <a href="mailto:gokulsat73@gmail.com">gokulsat73@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
-            <a href="tel:+916383481856">+91 6383481856</a>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn Profile</a>
-          </div>
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            <a href="https://github.com" target="_blank" rel="noopener">GitHub Profile</a>
+      <p class="section-tag center fade-up">Get In Touch</p>
+      <h2 class="section-title center fade-up">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-left fade-up">
+          <p class="contact-intro">Have a project in mind or want to collaborate? Feel free to reach out — I'd love to hear from you.</p>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="cc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+              </div>
+              <div>
+                <span class="cc-label">Email</span>
+                <a href="mailto:gokulsat73@gmail.com" class="cc-val">gokulsat73@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="cc-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="cc-label">Phone</span>
+                <a href="tel:+916383481856" class="cc-val">+91 6383481856</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <div class="cc-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </div>
+              <div>
+                <span class="cc-label">GitHub</span>
+                <a href="https://github.com/gokul2006-gs" target="_blank" rel="noopener" class="cc-val">gokul2006-gs</a>
+              </div>
+            </div>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
-          <div class="form-group">
-            <input type="text" id="name" placeholder="Your Name" required autocomplete="name" />
+        <form class="contact-form fade-up delay-1" id="contactForm">
+          <div class="form-row">
+            <div class="form-float">
+              <input type="text" id="fname" placeholder=" " required autocomplete="name" />
+              <label for="fname">Your Name</label>
+            </div>
+            <div class="form-float">
+              <input type="email" id="femail" placeholder=" " required autocomplete="email" />
+              <label for="femail">Your Email</label>
+            </div>
           </div>
-          <div class="form-group">
-            <input type="email" id="email" placeholder="Your Email" required autocomplete="email" />
+          <div class="form-float">
+            <input type="text" id="fsubject" placeholder=" " />
+            <label for="fsubject">Subject</label>
           </div>
-          <div class="form-group">
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+          <div class="form-float">
+            <textarea id="fmessage" rows="5" placeholder=" " required></textarea>
+            <label for="fmessage">Your Message</label>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
-          <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon.</p>
+          <button type="submit" class="btn btn-primary full">Send Message →</button>
+          <p class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
         </form>
       </div>
     </div>
@@ -300,7 +531,21 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>© 2026 Gokul S. Designed &amp; built with ❤️</p>
+    <div class="footer-inner">
+      <div class="footer-logo">Gokul<span>.</span></div>
+      <p>© 2026 Gokul S. All rights reserved.</p>
+      <div class="footer-socials">
+        <a href="mailto:gokulsat73@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/gokul2006-gs" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+      </div>
+    </div>
   </footer>
 
   <script src="main.js"></script>
